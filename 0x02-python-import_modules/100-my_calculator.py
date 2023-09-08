@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Write a program that imports all functions from the file calculator_1.py and handles basic operations.'''
+'''Write a program that imports all functions'''
 
 if __name__ == "__main__":
     import sys
