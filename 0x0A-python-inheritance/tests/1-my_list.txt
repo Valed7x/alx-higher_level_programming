@@ -1,12 +1,15 @@
 Test for 1-my_list.py
 -------------------------------------------
 
+
 case 0: import
 >>> MyList = __import__('1-my_list').MyList
 >>>
 -------------------------------------------
 
+
 case 1: common case
+
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -22,9 +25,12 @@ case 1: common case
 [1, 4, 2, 3, 5]
 >>>
 
+
 -------------------------------------------
 
+
 case 2: not defined object
+
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list2.print_sorted()
@@ -33,9 +39,12 @@ Traceback (most recent call last):
 NameError: name 'my_list2' is not defined
 >>>
 
+
 -------------------------------------------
 
+
 case 3: passed a list
+
 
 >>> a = [1, 9, 4]
 >>> my_list = MyList(a)
@@ -43,9 +52,12 @@ case 3: passed a list
 [1, 4, 9]
 >>>
 
+
 -------------------------------------------
 
+
 case 4: empty list
+
 
 >>> a = []
 >>> my_list = MyList(a)
@@ -53,9 +65,12 @@ case 4: empty list
 []
 >>>
 
+
 -------------------------------------------
 
+
 case 5: unique number
+
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -65,9 +80,12 @@ case 5: unique number
 [1]
 >>>
 
+
 -------------------------------------------
 
+
 case 6: same number
+
 
 >>> my_list2 = MyList()
 >>> my_list2.append(1)
@@ -78,7 +96,9 @@ case 6: same number
 [1, 1, 1, 1]
 >>>
 
+
 -------------------------------------------
+
 
 case 7: parent object
 >>> my_list = [1, 2, 3]
