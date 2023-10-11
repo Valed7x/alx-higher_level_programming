@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 importing a class
-
 from the parent.
 """
 Rectangle = __import__("9-rectangle").Rectangle
