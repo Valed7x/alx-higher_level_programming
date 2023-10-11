@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Defines a string
+Defines a JSON-to
 
--to-JSON function.
+-object function.
 """
 import json
 
 
-def to_json_string(my_obj):
-    """Return the JSON representation of a string object."""
-    return json.dumps(my_obj)
+def from_json_string(my_str):
+    """Return the Python object representation of a JSON string."""
+    return json.loads(my_str)
