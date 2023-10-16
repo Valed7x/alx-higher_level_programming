@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+
 """
 Defines a rectangle class.
 """
+
 from models.base import Base
 
 
@@ -15,6 +17,7 @@ class Rectangle(Base):
         Initialize a new Rectangle.
 
         Args:
+
             width (int): The width of the new Rectangle.
 
             height (int): The height of the new Rectangle.

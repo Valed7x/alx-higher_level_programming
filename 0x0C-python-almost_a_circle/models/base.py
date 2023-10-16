@@ -3,6 +3,7 @@
 """
 Defines a base model class.
 """
+
 import json
 import csv
 import turtle
@@ -10,12 +11,13 @@ import turtle
 
 class Base:
     """
-    Base model.
+    Represent the base model.
 
-    This Represents the "base" for all other classes in project 0x0C*.
+    Represents the "base" for all other classes in project 0x0C*.
 
-    Private Class Attributes:
-        __nb_object (int): Number of instantiated Bases.
+    Attributes:
+
+        __nb_objects (int): The number of instantiated Bases.
     """
 
     __nb_objects = 0
@@ -25,6 +27,7 @@ class Base:
         Initialize a new Base.
 
         Args:
+
             id (int): The identity of the new Base.
         """
         if id is not None:
@@ -39,6 +42,7 @@ class Base:
         Return the JSON serialization of a list of dicts.
 
         Args:
+
             list_dictionaries (list): A list of dictionaries.
         """
         if list_dictionaries is None or list_dictionaries == []:
@@ -51,6 +55,7 @@ class Base:
         Write the JSON serialization of a list of objects to a file.
 
         Args:
+
             list_objs (list): A list of inherited Base instances.
         """
         filename = cls.__name__ + ".json"
@@ -67,9 +72,13 @@ class Base:
         Return the deserialization of a JSON string.
 
         Args:
+
             json_string (str): A JSON str representation of a list of dicts.
+
         Returns:
+
             If json_string is None or empty - an empty list.
+
             Otherwise - the Python list represented by json_string.
         """
         if json_string is None or json_string == "[]":
@@ -82,6 +91,7 @@ class Base:
         Return a class instantied from a dictionary of attributes.
 
         Args:
+
             **dictionary (dict): Key/value pairs of attributes to initialize.
         """
         if dictionary and dictionary != {}:
@@ -100,7 +110,9 @@ class Base:
         Reads from `<cls.__name__>.json`.
 
         Returns:
+
             If the file does not exist - an empty list.
+
             Otherwise - a list of instantiated classes.
         """
         filename = str(cls.__name__) + ".json"
@@ -117,6 +129,7 @@ class Base:
         Write the CSV serialization of a list of objects to a file.
 
         Args:
+
             list_objs (list): A list of inherited Base instances.
         """
         filename = cls.__name__ + ".csv"
@@ -140,7 +153,9 @@ class Base:
         Reads from `<cls.__name__>.csv`.
 
         Returns:
+
             If the file does not exist - an empty list.
+
             Otherwise - a list of instantiated classes.
         """
         filename = cls.__name__ + ".csv"
@@ -163,6 +178,7 @@ class Base:
         Draw Rectangles and Squares using the turtle module.
 
         Args:
+
             list_rectangles (list): A list of Rectangle objects to draw.
 
             list_squares (list): A list of Square objects to draw.
